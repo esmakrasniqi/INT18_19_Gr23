@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #334;
+
+
+}
+
+li {
+    float:right ;
+}
+
+li a {
+    display: block;
+    color: white;
+font-size:18px;
+    text-align: center;
+  padding:50px 16px;
+    text-decoration: none;
+
+}
+
+
+li a:hover {
+    background-color:orange;
+}
+.menu a:hover{
+  border-top: 5px solid grey;
+}
+.menu a.active {
+  border-top: 5px solid orange;
