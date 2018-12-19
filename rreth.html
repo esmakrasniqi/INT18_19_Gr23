@@ -3,10 +3,14 @@
     <head>
 <title> Travel to Prishtina</title>
 <link rel="stylesheet" href="titulli.css">
+<link rel="stylesheet" href="zoom.css">
 
     </head>
-
+    <link href='https://fonts.googleapis.com/css?family=Meera Inimai' rel='stylesheet'>>
 <style>
+    article{
+        font-size:20px; font-family:'Meera Inimai'; 
+    }
 
 </style>
 
@@ -27,16 +31,44 @@
 <article>
 <h1>PRISHTINA</h1>
 
+<img id="myImg" src="prishtina/prc.jpg"  alt="1)Stadiumi Fadil Vokrri 2)Aeroporti Adem Jashari 3)KB Prishtina 4)Prishtina gjate dimrit" align="left" style="width:100%;max-width:300px">
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+var modal = document.getElementById('myModal');
+
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 Prishtina është qyteti më i madh në Republikën e Kosovës si dhe kryeqyteti i saj.
  Me një popullsi prej rreth 200.000 banorësh ku 80% prej tyre janë Kosovarë, Prishtina gjendet në pjesën veri-lindore të Kosovës.
  <br>
  <br>
+ 
  Prishtina karakterizohet si qendër kryesore që ndërlidhë qytetet e Kosovës si dhe qendrat më të mëdha të Ballkanit, dhe si pasojë e pozitës shumë të mire gjeografike të saj Prishtina është udhëkryq i rëndësishëm për rrugët magjistrale, automobilistike, hekurudhore dhe ajrore brenda dhe jashtë vendit.
+ 
 
  <br>
  <br>
-  Prishtina është qendra kryesore administrative e Republikës së Kosovës, dhe në të gjenden gati të gjitha institucionet shtetërore si: Qeveria, Ministritë, Akademia e Shkencave dhe Arteve,  Aeroporti i Kosovës, QKUK, Muzeu kombëtar, Kazerma Ushtarake, Biblioteka Kombëtare, Stadiumi Kombëtar etj…
- 
+  <b style="font-size:20px; color:red;">Prishtina</b> është qendra kryesore administrative e Republikës së Kosovës, dhe në të gjenden gati të gjitha institucionet shtetërore si: Qeveria, Ministritë, Akademia e Shkencave dhe Arteve,  Aeroporti i Kosovës, QKUK, Muzeu kombëtar, Kazerma Ushtarake, Biblioteka Kombëtare, Stadiumi Kombëtar etj…
+  
   <br>
   <br>
    Prishtina nga viti 2008 deri në vitin 2011, e mbajti titullin “Kryeqyteti më i ri në Botë”, dhe që nga ajo kohë ekonomia, transporti dhe infrastruktura e Prishtinës vetëm se është duke u zhvilluar vazhdimisht, dhe si rrjedhojë Prishtina vazhdimisht po bëhet një vend më tërheqës për turistët e saj.
@@ -48,7 +80,24 @@ Prishtina është qyteti më i madh në Republikën e Kosovës si dhe kryeqyteti
       <br>
       <br>
            Para se të udhëtoni në një vend, ju e shikoni edhe klimën e tij, dhe Prishtina ju ofron një mot shumë të mire për adhuruesit e nxehtësisë gjatë verës si dhe për adhuruesit e temperaturave të ftohta gjatë dimrit. Me një temperature mesatare vjetore prej 10.4°C  dhe me reshje prej 600mm, temperature mesatare gjatë verës 30°C dhe gjatë dimrit -1°C.
- 
+       <br>
+       <br>
+       Prishtina poashtu ofron opsione të shumta edhe në aspektin e kulturës dhe sportit, duke filluar nga Biblioteka Kombetare bashkë me 16 biblioteka të tjera publike që përmbajnë rreth 167.000 libra (vlen të ceket se gjatë kohës së okupimit serb mbi 35.000 libra shqip u dogjën dhe u asimiluan). 
+       Pastaj mund ta gjeni edhe Institutin e Operes dhe Filharmonisë së Kosovës, duke mos harruar edhe Stadiumin Kombetar “Fadil Vokrri” si dhe në Pallatin e Rinisë gjendet shtëpia e kampionëve të shumfishtë të Balkan-League: “KB Prishtina”.
+    <br>
+     <br>
+          Ndër të tjera duhet të vizitoni edhe: Monumentin e Skënderbeut, NEWBORN, Monumentin e Zahir Pajazitit, Teatrin e Kosovës, Parkun Nacional “Gërmia”, Galerinë e Arteve, Sahatkullën, si dhe shumë Xhami të ndryshme që datojnë nga vitet e 1500-ta.
+         <br>
+         <br>
+       
+         Hyjnesha në Fron është edhe simboli i Prishtinës. U  gjend në vitin 1956 në vendin e njohur si Tjerrtorja. Kërkimet arkeologjike sugjerojnë se mosha e saj është mbi 6 000-vjeçare. Në Muzeun Arkeologjik të Prishtinës ka artefakte edhe nga epokat ilire, romake dhe otomane.
+        <br>
+        <br>
+        Gjithashtu, objekt tjetër i rëndësishëm është edhe Aeroporti ndërkombëtar “Adem Jashari” që gjendet 15 km në jugperëndim  të Prishtinës dhe numëron rreth 1.7 milionë udhëtar në vit, - jo keq për një vend me 2 milion banorë.
+        <br>
+        <br>
+        Poashtu në Sheshet e ndryshme në qendër të Prishtinës, përpos kafeneve dhe lokaleve të ndryshme ju sygjerojmë ta vizitoni atë gjatë dimrit, për të pare bukurinë dhe ngrohtësinë që e dhënë dritat dhe zbukurimet e shumta të vendosura nga Komuna e Prishtinës, por që atmosfera bëhet edhe më e mire nga njerëzit që i mbushin këto  sheshe.
+
 
 
 </body>
