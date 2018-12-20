@@ -1,4 +1,16 @@
+body{
+    background:#787878;
+
+}
+#permbajtja{
+     max-width:1000px;
+  margin:auto;
+  background: white;
+}
+
+
 ul {
+
     list-style-type: none;
     margin: 0;
     padding: 0;
