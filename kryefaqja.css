@@ -57,3 +57,11 @@ font-size:17px;
   height: 300px; 
 
 }
+.column2 {
+  float: left;
+  width: 300px;
+  padding: 10px;
+  height: 400; 
+
+}
+
