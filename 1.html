@@ -11,10 +11,31 @@
     </head>
 
 <style>
-	
+.container
+{
+  margin-left: 20px;
+}
 </style>
 
-<body>
+<script>
+  function Time()
+  {
+    var time=new Date().getHours();
+    var m = new Date().getMinutes();
+    var s = new Date().getSeconds();
+    if (time<=6 || time>=18)
+    {
+      alert("Mirëmbrëma\nMiresevini ne faqen tone \n"+ time+":"+m+":"+s);
+      document.body.style.background="linear-gradient(#010, #033,#010)";
+    }
+    else
+    {
+      alert("Mirëdita\nMiresevini ne faqen tone \n"+ time+":"+m+":"+s);
+      document.body.style.background="linear-gradient(#033, #033, #069,#069,#033)";
+    }
+  }
+  </script>
+<body onLoad="Time()">
 <div id="permbajtja">
 <header style="height:130px; ">
   <nav class="menu" >
@@ -46,7 +67,6 @@
     <p>Ne kete faqe do gjeni vendet me atraktive te kryeqytetit te Kosoves.</p>
   </div>
 </div>
-
 <br>
 <br>
 <br>
@@ -90,24 +110,26 @@
 
 <div class="row" style="backgroud-color=grey;">
   <div class="column1">
-    <h2>Kryefaqja</h2>
-    <hr>
+    <h2><a href="1.html" style=" text-decoration:none; color: royalblue;">Kryefaqja<hr></h2>
+    </a>
+    <p>Kalo ne krye te faqes duke<a href="1.html"> klikuar ketu.</a> </p>
+    
    
   </div>
   <div class="column1">
-    <h2><a href="todo.html"  style=" text-decoration:none; color: blue;">Eksploro</a></h2> <hr>
+    <h2><a href="todo.html"  style=" text-decoration:none; color: royalblue;">Eksploro<hr></a></h2> 
+    <p> Ne Prishtine mund te gjeni gjithcka, kliko Eksploro per me shume  </p>
+  </div>
+  <div class="column1">
+    <h2><a href="hotels.html"  style=" text-decoration:none; color: royalblue;">Hotele<hr></a></h2>
+    <p>Prishtina është plot me hotele dhe bujtina dhe ofron një zgjedhje të mirë në të gjitha kategoritë e buxhetit.. </p>
+  </div>
+  <div class="column1">
+    <h2><a href="rrethnesh.html" style=" text-decoration:none; color: royalblue;"> Rreth nesh<hr></a></h2>
     <p> </p>
   </div>
   <div class="column1">
-    <h2><a href="hotels.html"  style=" text-decoration:none; color: blue;">Hotele</a></h2> <hr>
-    <p>Prishtina është plot me hotele dhe bujtina dhe ofron një zgjedhje të mirë në të gjitha kategoritë e buxhetit,  </p>
-  </div>
-  <div class="column1">
-    <h2>Rreth nesh</h2> <hr>
-    <p> </p>
-  </div>
-  <div class="column1">
-    <h2><a href="contact.html"  style=" text-decoration:none; color: blue;">Na kontaktoni</h2> <hr>
+    <h2><a href="contact.html"  style=" text-decoration:none; color: royalblue;">Na kontaktoni</h2> <hr>
     <address>
           <p>Bregu i Diellit, p.n.</p>
       <p>10000 Prishtin&euml;, Republika e Kosov&euml;s</p>
@@ -121,6 +143,8 @@
   </address>
   </div>
 </div>
+
+
 </section>
 <footer>
     <div id="footer_bottom">

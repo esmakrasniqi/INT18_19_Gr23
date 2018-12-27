@@ -1,12 +1,14 @@
 
 body{
 background:#787878;
+	background: linear-gradient(rgb(78, 18, 0), rgb(26, 4, 104),#010); 
 }
 
 #permbajtja{
      max-width:1000px;
   margin:auto;
   background: white;
+  background: linear-gradient(rgb(255, 254, 168), rgb(212, 200, 255),rgb(190, 240, 190));
 }
 
 
@@ -38,12 +40,15 @@ font-size:18px;
 
 li a:hover {
     background-color:orange;
+color: #CA6500;
 }
 .menu a:hover{
   border-top: 5px solid grey;
+
 }
 .menu a.active {
   border-top: 5px solid orange;
+
 }
 footer {
 	/*background-color: #f5f5f5;*/
