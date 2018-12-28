@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title> Travel to Prishtina</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Author" content="Esma Krasniqi, Fatbardh Podvorica, Elsa Vitija">
+</head>
+
+
+
+<script>
+function transaction()
+{
+	
+	document.getElementById("p1").innerHTML="Kthehuni n&euml; faqen kryesore";
+	alert('Rezervimi u krye me sukses.');
+//Ketu kemi zgjedhur permes document.getElementById("p1").innerHTML="Back to home page"; qe te shkruhet
+//Back to home page kur te klikojme ne button perkatsisht kur thiret funksioni transaction
+//Pastaj permes alert('Transaction completed.'); krijojme ngjarjen ku shfaqet mesazhi Transaction completed.
+}
+
+</script>
+
+<style>
+
+.permbajtja
+{
+    background-color:rgb(231, 198, 198);
+}
+    </style>
+<body>
+
+<div class="permbajtja" style="width:1250px">
+
+<!--Me poshte kemi perdorur nje div container me qellim qe te caktojme
+ poziten e permbajtjes ne mes te faqes permes margin-->
+	<div id="container" style="margin-left:220px;margin-right:200px;margin-bottom:200px;margin-top:150px">
+    <h1>Rezervoni</h1>
+    <!--kemi perdorur nje forme per te derguar informata ne server-->
+    <form method="POST" action="htmlform.html">
+            <fieldset>
+                <legend>Te dhenat:</legend>
+           
+        <label>Emri</label>  
+        <input type="text" name="Emri"/>
+        <br>
+       <div style="float:right">
+        <label>Mbiemri</label>
+        <input type="text" name="Mbiemri"/> 
+       </div>
+<br>
+        <label>Email</label>
+        <input type="text" name="Email"/> <br>
+
+      <div style="float:right">
+        <label>Shteti</label>
+        <select name="Shteti">
+            <option value="-1">---Zgjedh vendin----</option>
+            <option value="1">Kosove</option>
+            <option>Shqiperi</option>
+            <option>Macedoni</option>
+            <option>Mali i Zi</option>
+            <option>Gjermani</option>
+            <option>Zvicer</option>
+            <option>Britani e madhe</option>
+            <option>Tjeter</option>
+        </select></div>
+        <br>
+        
+
+        <label>Te rritur</label>
+        <select name="Te rritur">
+            <option value="-1">-------</option>
+            <option value="1">1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <br>
+
+        <div style="float:right">
+        <label>Femije</label>
+        <select name="Femije">
+            <option value="-1">-------</option>
+            <option value="1">1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+        </select>
+        </div>
+        <br> 
+                    
+
+        <label>Data e check in</label>
+<input type="date" name="Data e check in"/> <br>
+
+<div style="float:right">
+<label>Data e check out</label>
+<input type="date" name="Data e check out"/></div> <br>
+
+<label>Zgjedhni dhomen</label>
+<select name="Zgjedhni dhomen">
+    <option value="-1">-------</option>
+    <option value="1">Dhome Ekonomike</option>
+    <option>Dhome Luksoze</option>
+    <option>Dhome Dopio</option>
+    <option>Dhome Treshe</option>
+    <option>Suite </option>
+    <option>Suite luksoze</option>
+</select><br> <br>
+
+
+<label>Telefoni</label>
+<input type="text" name="phone"/>
+<div style="float:right">
+<label>Shënime</label>
+<input type="text" name="Shënime"/> </div><br>
+
+
+
+
+    
+
+    <p>
+    <button type="button" value="Submit" onclick="transaction()">Rezervo
+    <!--permes ketij butoni ne do te thirrim funksionin transaction()-->
+    <!--si rezultat do te shfaqet messazhi dhe do te shkruhet teksti te <a> me id p1-->
+    </button>
+    <input type="reset" value="Anulo"><!--permes reset i fshijme te gjitha te dhenat e shkruara neper fusha-->
+    </p>
+    </form>
+	
+    <h3><a id="p1" href="hotels.html"></a>
+    </h3>
+    
+    <noscript>
+     Shfletuesi juaj nuk e p&euml;rkrah java-scriptin
+	</noscript><!--Teksti qe do te shfaqet nese browseri nuk perkrah javascript-->
+    
+  </div>
+</div>
+
+
+</body>
+</html>
