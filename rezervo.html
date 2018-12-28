@@ -22,53 +22,105 @@ function transaction()
 </script>
 
 <style>
+body{
+  background-image: url(prishtina/djblunt.jpg);
+  background-size: 500px 250px;
+  background-position: right bottom, center;
+  background-repeat: repeat, no-repeat;
+  padding: 25px;
+}
 
-.permbajtja
+#container
 {
-    background-color:rgb(231, 198, 198);
+    background-color: hsla(0,100%,30%,0.3);
+
+    border:15px solid transparent;
+    padding:40px;
+    border-image: url(prishtina/frame.png) 30 round;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.5);
+}
+
+h1{
+    font-size: 30px;
+    padding-left:38%;
+
+}
+.button {
+  padding: 5px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: royalblue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  float:right;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button1 {
+  padding: 5px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(197, 70, 70);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  float:right;
 }
     </style>
 <body>
 
-<div class="permbajtja" style="width:1250px">
 
 <!--Me poshte kemi perdorur nje div container me qellim qe te caktojme
  poziten e permbajtjes ne mes te faqes permes margin-->
-	<div id="container" style="margin-left:220px;margin-right:200px;margin-bottom:200px;margin-top:150px">
-    <h1>Rezervoni</h1>
+	<div id="container" style="margin-left:220px;margin-right:200px;margin-bottom:200px;margin-top:50px">
+    
+    <h1  mark style="background-color: rgb(255, 255, 255)">Rezervoni</h1> 
     <!--kemi perdorur nje forme per te derguar informata ne server-->
     <form method="POST" action="htmlform.html">
             <fieldset>
-                <legend>Te dhenat:</legend>
+                <legend style="font-size:20px">T&euml; dh&euml;nat:</legend>
            
-        <label>Emri</label>  
+        <label mark style="background-color: rgb(255, 255, 255)">Emri</label>  
         <input type="text" name="Emri"/>
         <br>
        <div style="float:right">
-        <label>Mbiemri</label>
+        <label mark style="background-color: rgb(255, 255, 255)">Mbiemri</label>
         <input type="text" name="Mbiemri"/> 
        </div>
 <br>
-        <label>Email</label>
+        <label mark style="background-color: rgb(255, 255, 255)">Email</label>
         <input type="text" name="Email"/> <br>
 
       <div style="float:right">
-        <label>Shteti</label>
+        <label mark style="background-color: rgb(255, 255, 255)">Shteti</label>
         <select name="Shteti">
             <option value="-1">---Zgjedh vendin----</option>
-            <option value="1">Kosove</option>
-            <option>Shqiperi</option>
+            <option value="1">Kosov&euml;</option>
+            <option>Shqip&euml;ri</option>
             <option>Macedoni</option>
             <option>Mali i Zi</option>
             <option>Gjermani</option>
-            <option>Zvicer</option>
+            <option>Zvic&euml;r</option>
             <option>Britani e madhe</option>
-            <option>Tjeter</option>
+            <option>Tjetër</option>
         </select></div>
         <br>
         
 
-        <label>Te rritur</label>
+        <label mark style="background-color: rgb(255, 255, 255)">T&euml; rritur</label>
         <select name="Te rritur">
             <option value="-1">-------</option>
             <option value="1">1</option>
@@ -80,7 +132,7 @@ function transaction()
         <br>
 
         <div style="float:right">
-        <label>Femije</label>
+        <label mark style="background-color: rgb(255, 255, 255)">F&euml;mij&euml;</label>
         <select name="Femije">
             <option value="-1">-------</option>
             <option value="1">1</option>
@@ -96,29 +148,29 @@ function transaction()
         <br> 
                     
 
-        <label>Data e check in</label>
+        <label mark style="background-color: rgb(255, 255, 255)">Data e check in</label>
 <input type="date" name="Data e check in"/> <br>
 
 <div style="float:right">
-<label>Data e check out</label>
+<label mark style="background-color: rgb(255, 255, 255)">Data e check out</label>
 <input type="date" name="Data e check out"/></div> <br>
 
-<label>Zgjedhni dhomen</label>
+<label mark style="background-color: rgb(255, 255, 255)">Zgjedhni dhom&euml;n</label>
 <select name="Zgjedhni dhomen">
     <option value="-1">-------</option>
-    <option value="1">Dhome Ekonomike</option>
-    <option>Dhome Luksoze</option>
-    <option>Dhome Dopio</option>
-    <option>Dhome Treshe</option>
-    <option>Suite </option>
-    <option>Suite luksoze</option>
+    <option value="1">Dhom&euml; Ekonomike</option>
+    <option>Dhom&euml; Luksoze</option>
+    <option>Dhom&euml; Dopio</option>
+    <option>Dhom&euml; Treshe</option>
+    <option>Suit&euml; </option>
+    <option>Suit&euml; luksoze</option>
 </select><br> <br>
 
 
-<label>Telefoni</label>
+<label mark style="background-color: rgb(255, 255, 255)">Telefoni</label>
 <input type="text" name="phone"/>
 <div style="float:right">
-<label>Shënime</label>
+<label mark style="background-color: rgb(255, 255, 255)">Sh&euml;nime</label>
 <input type="text" name="Shënime"/> </div><br>
 
 
@@ -127,11 +179,11 @@ function transaction()
     
 
     <p>
-    <button type="button" value="Submit" onclick="transaction()">Rezervo
+    <button class="button" type="button" value="Submit" onclick="transaction()">Rezervo
     <!--permes ketij butoni ne do te thirrim funksionin transaction()-->
     <!--si rezultat do te shfaqet messazhi dhe do te shkruhet teksti te <a> me id p1-->
     </button>
-    <input type="reset" value="Anulo"><!--permes reset i fshijme te gjitha te dhenat e shkruara neper fusha-->
+    <input class="button1" type="reset" value="Anulo"><!--permes reset i fshijme te gjitha te dhenat e shkruara neper fusha-->
     </p>
     </form>
 	
