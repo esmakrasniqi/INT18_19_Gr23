@@ -16,25 +16,11 @@
   margin-left: 20px;
 }
 </style>
+<script type="text/javascript" src=contact.js> </script>
 
-<script>
-  function Time()
-  {
-    var time=new Date().getHours();
-    var m = new Date().getMinutes();
-    var s = new Date().getSeconds();
-    if (time<=6 || time>=18)
-    {
-      alert("Mirëmbrëma\nMiresevini ne faqen tone \n"+ time+":"+m+":"+s);
-      document.body.style.background="linear-gradient(#010, #033,#010)";
-    }
-    else
-    {
-      alert("Mirëdita\nMiresevini ne faqen tone \n"+ time+":"+m+":"+s);
-      document.body.style.background="linear-gradient(#033, #033, #069,#069,#033)";
-    }
-  }
-  </script>
+    
+
+
 <body onLoad="Time()">
 <div id="permbajtja">
 <header style="height:130px; ">
@@ -112,6 +98,7 @@
   <div class="column1">
     <h2><a href="1.html" style=" text-decoration:none; color: royalblue;">Kryefaqja<hr></h2>
     </a>
+  
     <p>Kalo ne krye te faqes duke<a href="1.html"> klikuar ketu.</a> </p>
     
    
@@ -148,7 +135,9 @@
 </section>
 <footer>
     <div id="footer_bottom">
+        <p style="float:right; background:darkgrey"><a href="game.html">Play now</a></p>
 <p> Copyright &copy;  2018 Grupi 23 - All rights reserved. </p>
+
 </footer>
 </div>
     </body>
