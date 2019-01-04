@@ -6,10 +6,11 @@
   <meta name="Author" content="Esma Krasniqi, Fatbardh Podvorica, Elsa Vitija">
 <link rel="stylesheet" href="titulli.css">
 <link rel="stylesheet" href="contact.css">
+
     </head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-
+// Kerkesat hide dhe show
     $(document).ready(function(){
       $("#hide").click(function(){
         $("p").hide(1000);
@@ -38,8 +39,8 @@
                     <a href="1.html"> 
                             <img src="prishtina/1.png" alt="logo e Prishtines" id="bitmap-logo" style=" width:120px;height:120px;" ></a>
 <li><a class="active" a href="contact.html">Kontakt</a></li>
-  <li><a href="events">Eventet</a></li>
-  <li><a href="todo">Cfarë të bëjmë</a></li>
+  <li><a href="events.html">Eventet</a></li>
+  <li><a href="todo.html">Cfarë të bëjmë</a></li>
   <li><a href="hotels.html">Akomodimi</a></li>
   <li><a href="rreth.html">Rreth Prishtines</a></li>
   <li><a href="1.html">Kryefaqja</a></li>
@@ -75,8 +76,21 @@
                 <textarea placeholder="Write your message here"></textarea>
             <input id="submit" type="submit" value="Submit"> 
         </form>
+
+
+
         
-        <svg height="150" width="400"  transform=" translate(50px,100px);" >
+        
+
+
+        <svg height="150" width="400"  transform=" translate(50px,100px);"
+        
+      
+        style=" -webkit-transform: rotate(-10deg);/*Safari dhe Chrome*/
+        -moz-transform: rotate(-10deg);/*Mozilla*/
+        -o-transform: rotate(-10deg);/*Opera*/
+        -ms-transform: rotate(-10deg);/*IE*/
+        transform: rotate(-10deg);">
                 <defs>
                   <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" style="stop-color:rgb(130, 121, 138);stop-opacity:1" />
@@ -86,9 +100,17 @@
                 <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
                 <text fill="black" font-size="20" font-family="Verdana"  x="140" y="80">
                         Faleminderit</text>
-                        
+                      
                 Sorry, your browser does not support inline SVG.
               </svg>
+
+             <div style="margin-left:150px">
+              <p id="demo">Qe vizituat Kosoven!</p>
+              <button onclick="myFunction()">Ndrysho</button>
+
+              <script type="text/javascript" src=contact.js> 
+              </script>
+</div>
     </div>
   
     <button id="hide">Hide</button>
@@ -120,9 +142,12 @@
         <abbr title="Kthehu n&euml; krye">
                 <a href="#Top"><img src="prishtina/top.png" width="50" height="50" alt="Back to top" ALIGN="right"/></a>
                 </abbr>    
-        <p> <a href="rrethnesh.html"><b>Klikoni ketu </b></a>per me shume informacione rreth ekipit.</p>
+        <p style="font-size: 25px;"><b><a href="rrethnesh.html"><i>Klikoni ketu</i></a> per me shume informacione rreth ekipit.</b> </p>
      
             
+<h1> <a href="pytesor.html"><i>Kliko ketu</i></a>  per nje pytesor te shkurte.</h1>
+
+
     </div>
 </article>
 <footer>
