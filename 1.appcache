@@ -3,16 +3,21 @@ CACHE MANIFEST
 CACHE:
 /titulli.css
 /kryefaqja.css
-/1.png
-/2.jpg
-/muzeu.jpg
-/newborn.jpg
-/harta.jpeg
-/food.jpg
-/zone.jpg
+/prishtina/1.png
+/prishtina/2.jpg
+/prishtina/muzeu.jpg
+/prishtina/newborn.jpg
+/prishtina/harta.jpeg
+/prishtina/food.jpg
+/prishtina/zone.jpg
 
 #permes yll zgjedhim te gjitha te dhenat tjera me perjashtim te chache te jen online
 NETWORK:
 *
 FALLBACK:
-/html/ /1.html
+1.html 
+rreth.html
+hotels.html
+events.html
+todo.html
+contact.html
