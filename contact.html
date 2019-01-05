@@ -1,21 +1,35 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html manifest="contact.appcache" xmlns="http://www.w3.org/1999/xhtml">
     <head>
 <title> Travel to Prishtina</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Author" content="Esma Krasniqi, Fatbardh Podvorica, Elsa Vitija">
 <link rel="stylesheet" href="titulli.css">
 <link rel="stylesheet" href="contact.css">
+
     </head>
-
-<style>
-
-</style>
-<script type="text/javascript">
-    function message() {
-        alert("Ketu mund te na kontaktoni neve!");
-    }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+// Kerkesat hide dhe show
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("p").hide(1000);
+        alert("Te gjitha paragrafet tani do fshehen");
+    });
     
+        $("#show").click(function(){
+        
+    $("p").show(1000);
+    alert("Te gjitha paragrafet tani do shfaqen");
+      });
+    });
+
+
+    
+
+    </script>
+
+<script type="text/javascript" src=contact.js> 
 </script>
 
 <body onload="message()">
@@ -25,8 +39,8 @@
                     <a href="1.html"> 
                             <img src="prishtina/1.png" alt="logo e Prishtines" id="bitmap-logo" style=" width:120px;height:120px;" ></a>
 <li><a class="active" a href="contact.html">Kontakt</a></li>
-  <li><a href="events">Eventet</a></li>
-  <li><a href="todo">Cfarë të bëjmë</a></li>
+  <li><a href="events.html">Eventet</a></li>
+  <li><a href="todo.html">Cfarë të bëjmë</a></li>
   <li><a href="hotels.html">Akomodimi</a></li>
   <li><a href="rreth.html">Rreth Prishtines</a></li>
   <li><a href="1.html">Kryefaqja</a></li>
@@ -34,7 +48,7 @@
 </ul>
 </header>
 
-<div id="content">
+<article>
     <div id="contact">
         <address>
             <h1><font face="verdana" size="6" color="black">Contact</font></h1>
@@ -51,19 +65,57 @@
                 <a href="http://plus.google.com" target="_blank"><img height="40px" width="40px" src="prishtina/google_plus.png" alt="google plus" /></a>
             </p>
         </address>
-        <form id="contact_form">
+        <form id="contact_form" autocomplete="on">
                 <label>Name:</label>
                 <input type="text" name="sender" placeholder="Enter name">
                 <label>E-Mail:</label>
-                <input type="text" name="sender_e-mail" placeholder="Enter e-mail">
+                <input type="email" name="sender_e-mail" placeholder="Enter e-mail">
                 <label>Subject:</label>
                 <input type="text" name="subject" placeholder="Enter subject">
                 <label>Message:</label>
                 <textarea placeholder="Write your message here"></textarea>
-            <input id="submit" type="submit" value="Submit"> 
+            <input id="submit" type="submit" value="Submit"  onclick="flm()"> 
         </form>
+
+
+
+        
+        
+
+
+        <svg height="150" width="400"  transform=" translate(50px,100px);"
+        
+      
+        style=" -webkit-transform: rotate(-10deg);/*Safari dhe Chrome*/
+        -moz-transform: rotate(-10deg);/*Mozilla*/
+        -o-transform: rotate(-10deg);/*Opera*/
+        -ms-transform: rotate(-10deg);/*IE*/
+        transform: rotate(-10deg);">
+                <defs>
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(130, 121, 138);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgba(31, 11, 143, 0.685);stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                <text fill="black" font-size="20" font-family="Verdana"  x="140" y="80">
+                        Faleminderit</text>
+                      
+                Sorry, your browser does not support inline SVG.
+              </svg>
+
+             <div style="margin-left:150px">
+              <p id="demo">Qe vizituat Kosoven!</p>
+              <button onclick="myFunction()">Ndrysho</button>
+
+              <script type="text/javascript" src=contact.js> 
+              </script>
+</div>
     </div>
-    <div>
+  
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <div class="staff">
         <h1>Staff Members</h1>
         <table>
             <tr>
@@ -87,14 +139,22 @@
             </tr>
         
         </table>
-        <p> <a href="rrethnesh.html"><b>Klikoni ketu </b></a>per me shume informacione rreth ekipit.</p>
-    </div>	
-</div>
+        <abbr title="Kthehu n&euml; krye">
+                <a href="#Top"><img src="prishtina/top.png" width="50" height="50" alt="Back to top" ALIGN="right"/></a>
+                </abbr>    
+        <p style="font-size: 25px;"><b><a href="rrethnesh.html"><i>Klikoni ketu</i></a> per me shume informacione rreth ekipit.</b> </p>
+     
+            
+<h1> <a href="pytesor.html"><i>Kliko ketu</i></a>  per nje pytesor te shkurte.</h1>
 
 
+    </div>
+</article>
 <footer>
         <div id="footer_bottom">
     <p> Copyright &copy;  2018 Grupi 23 - All rights reserved. </p>
+        </div>
+    
     </footer>
 
 </div>

@@ -6,20 +6,8 @@
   <meta name="Author" content="Esma Krasniqi, Fatbardh Podvorica, Elsa Vitija">
 </head>
 
+<script src="rezervo.js"></script>
 
-
-<script>
-function transaction()
-{
-	
-	document.getElementById("p1").innerHTML="Kthehuni n&euml; faqen kryesore";
-	alert('Rezervimi u krye me sukses.');
-//Ketu kemi zgjedhur permes document.getElementById("p1").innerHTML="Back to home page"; qe te shkruhet
-//Back to home page kur te klikojme ne button perkatsisht kur thiret funksioni transaction
-//Pastaj permes alert('Transaction completed.'); krijojme ngjarjen ku shfaqet mesazhi Transaction completed.
-}
-
-</script>
 
 <style>
 body{
@@ -183,8 +171,11 @@ h1{
     <!--permes ketij butoni ne do te thirrim funksionin transaction()-->
     <!--si rezultat do te shfaqet messazhi dhe do te shkruhet teksti te <a> me id p1-->
     </button>
+    <div id="result" style="background-color: lightpink"></div>
+
     <input class="button1" type="reset" value="Anulo"><!--permes reset i fshijme te gjitha te dhenat e shkruara neper fusha-->
     </p>
+   
     </form>
 	
     <h3><a id="p1" href="hotels.html"></a>

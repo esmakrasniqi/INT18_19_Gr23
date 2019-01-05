@@ -1,0 +1,23 @@
+CACHE MANIFEST
+#DATE 05.12.2018 te dhenat qe mundesohen offline pasi downloadohen per here te pare
+CACHE:
+/titulli.css
+/kryefaqja.css
+/prishtina/1.png
+/prishtina/2.jpg
+/prishtina/muzeu.jpg
+/prishtina/newborn.jpg
+/prishtina/harta.jpeg
+/prishtina/food.jpg
+/prishtina/zone.jpg
+
+#permes yll zgjedhim te gjitha te dhenat tjera me perjashtim te chache te jen online
+NETWORK:
+*
+FALLBACK:
+1.html 
+rreth.html
+hotels.html
+events.html
+todo.html
+contact.html

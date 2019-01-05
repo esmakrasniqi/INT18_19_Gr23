@@ -32,3 +32,13 @@
               }
             }
 
+//funksioni myfunction te contact qe ndryshon kosoven me prishtinen
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("Kosoven","Prishtinen");
+  document.getElementById("demo").innerHTML = txt;
+}
+
+function flm() {
+  alert("Faleminderit qe na kontaktuat!");
+}

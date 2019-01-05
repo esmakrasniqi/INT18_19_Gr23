@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html manifest="1.appcache">
     <head>
 <title> Travel to Prishtina</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="kryefaqja.css">
 <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
-    </head>
+  </head>
 
 <style>
 .container
@@ -16,25 +16,11 @@
   margin-left: 20px;
 }
 </style>
+<script type="text/javascript" src=contact.js> </script>
 
-<script>
-  function Time()
-  {
-    var time=new Date().getHours();
-    var m = new Date().getMinutes();
-    var s = new Date().getSeconds();
-    if (time<=6 || time>=18)
-    {
-      alert("Mirëmbrëma\nMiresevini ne faqen tone \n"+ time+":"+m+":"+s);
-      document.body.style.background="linear-gradient(#010, #033,#010)";
-    }
-    else
-    {
-      alert("Mirëdita\nMiresevini ne faqen tone \n"+ time+":"+m+":"+s);
-      document.body.style.background="linear-gradient(#033, #033, #069,#069,#033)";
-    }
-  }
-  </script>
+    
+
+
 <body onLoad="Time()">
 <div id="permbajtja">
 <header style="height:130px; ">
@@ -91,27 +77,53 @@
   <img src="prishtina/harta.jpeg" style="width:190px; height:130px; padding: 5px; border: 2px solid black;" alt="Harta">      
     <p style="color:black; text-align: left;"> Harta e Prishtinës<br>
     <a href="https://maps.google.com/maps?ll=42.657548,21.162541&z=14&t=m&hl=en-US&gl=US&mapclient=embed"target="_blank"  >Zmadho foton »</a></p></p>
+    <p>Kliko butonin per te pare kordinatat tuaja</p>
+<button onclick="getLocation()">Provojeni</button>
+    <p id="demo"></p>
+    <script>
+        var x = document.getElementById("demo");
+        
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude + 
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+        
+     
   </div>
 
   <div class="column2">
     <h2 style="color:black;text-align: left;">Restaurante</h2>
     <img src="prishtina/food.jpg" ALIGN="left"style="width:80px; height:80px; padding: 5px; border: 2px solid black;" alt="Ushqime"> 
     <p style="color:black;" >Sa i perket ushqimit, Prishtina te ofron shume mundesi zgjedhje qe nga tradicionalja deri te ato nderkombetaret 
-      <a href="rreth.html" target="_blank">Vazhdo leximin »</a></p>
+      <a href="events.html" target="_blank">Vazhdo leximin »</a></p>
 <hr>
     <div class="row">
     <h2 style="color:black;text-align: left;">Jeta e nates</h2>
      <img src="prishtina/zone.jpg" ALIGN="left"style= " width:80px; height:80px;padding: 5px; border: 2px solid black;" alt="Zone Club">
-    <p style="color:black; " >Prishtina njihet per jeten e nates ta kete shume entuziaste <a href="rreth.html" target="_blank">Vazhdo leximin »</a></p>
+    <p style="color:black; " >Prishtina njihet per jeten e nates ta kete shume entuziaste <a href="events.html" target="_blank">Vazhdo leximin »</a></p>
    <br><hr> </div>
   </div>
 </div>
 
 
-<div class="row" style="backgroud-color=grey;">
+
+
+
+
+<div class="row" style="backgroud-color:grey;">
   <div class="column1">
     <h2><a href="1.html" style=" text-decoration:none; color: royalblue;">Kryefaqja<hr></h2>
     </a>
+  
     <p>Kalo ne krye te faqes duke<a href="1.html"> klikuar ketu.</a> </p>
     
    
@@ -145,10 +157,32 @@
 </div>
 
 
+
+<div id="counter" style="text-align: left;  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"></div>
+
+ <script>
+var visits = localStorage.getItem('on_load_counter');
+var sessionVisits = sessionStorage.getItem('session_counter');
+ if (visits === null) {
+    visits = 0;
+}
+if (sessionVisits === null) {
+  sessionVisits = 0;
+}
+ sessionVisits++;
+visits++;
+ localStorage.setItem("on_load_counter", visits);
+sessionStorage.setItem("session_counter", sessionVisits)
+ document.getElementById('counter').innerHTML = "Ju keni vizituar faqen tone " + visits + " here (" + sessionVisits + " here ne kete sesion). Ju falenderojme perzemersisht!";
+</script>
+
+
 </section>
 <footer>
     <div id="footer_bottom">
+        <p style="float:right; background:darkgrey"><a href="game.html">Play now</a></p>
 <p> Copyright &copy;  2018 Grupi 23 - All rights reserved. </p>
+
 </footer>
 </div>
     </body>
