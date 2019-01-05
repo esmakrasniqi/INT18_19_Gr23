@@ -1,0 +1,18 @@
+CACHE MANIFEST
+#DATE 05.12.2018 te dhenat qe mundesohen offline pasi downloadohen per here te pare
+CACHE:
+/titulli.css
+/kryefaqja.css
+/1.png
+/2.jpg
+/muzeu.jpg
+/newborn.jpg
+/harta.jpeg
+/food.jpg
+/zone.jpg
+
+#permes yll zgjedhim te gjitha te dhenat tjera me perjashtim te chache te jen online
+NETWORK:
+*
+FALLBACK:
+/html/ /1.html
