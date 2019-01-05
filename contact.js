@@ -42,3 +42,7 @@ function myFunction() {
 function flm() {
   alert("Faleminderit qe na kontaktuat!");
 }
+
+$(window).on('scroll', function() {
+  $(".flm").css("transform", "rotate(" + $(window).scrollTop()/3 + "deg)");
+});
