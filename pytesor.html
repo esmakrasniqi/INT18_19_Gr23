@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title> Travel to Prishtina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Author" content="Esma Krasniqi, Fatbardh Podvorica, Elsa Vitija">
+<link rel="stylesheet" href="titulli.css">
+<link rel="stylesheet" href="checkbox.css">
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script >
+function flm() {
+  alert("Faleminderit per kohen tuaj!");
+}
+</script>
+<style>
+ article {
+        font-family: Arial;
+        font-size: 17px;
+        margin-left: 250px;
+     
+      }
+</style>
+
+<body>
+<div id="permbajtja">
+<header style="height:130px; ">
+            <ul class="menu"  >
+                    <a href="1.html"> 
+                            <img src="prishtina/1.png" alt="logo e Prishtines" id="bitmap-logo" style=" width:120px;height:120px;" ></a>
+<li><a class="active" a href="contact.html">Kontakt</a></li>
+  <li><a href="events.html">Eventet</a></li>
+  <li><a href="todo.html">Cfarë të bëjmë</a></li>
+  <li><a href="hotels.html">Akomodimi</a></li>
+  <li><a href="rreth.html">Rreth Prishtines</a></li>
+  <li><a href="1.html">Kryefaqja</a></li>
+
+</ul>
+</header>
+
+<article>
+        <canvas id="myCanvas" width="150" height="80" style="border:1px solid black;">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+                
+                <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.font = "30px Arial";
+                ctx.fillText("Pytesor",10,50);
+                </script>
+        <div style="margin-left: 10px;">
+                <h1>Keni qene ndonjehere ne Prishtine?</h1>
+                <label class="container">Po
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Jo
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+            
+        <h1>Cka ju pelqen me shume te vizitoni?</h1>
+        <label class="container1">Monumente
+          <input type="checkbox" checked="checked">
+          <span class="checkmark1"></span>
+        </label>
+        <label class="container1">Restaurante
+          <input type="checkbox">
+          <span class="checkmark1"></span>
+        </label>
+        <label class="container1">Klube nate
+          <input type="checkbox">
+          <span class="checkmark1"></span>
+        </label>
+        <label class="container1">Tjeter
+          <input type="checkbox">
+
+          <span class="checkmark1">
+          </span>
+          <p><textarea id="output" rows="2" cols="50"></textarea></p>
+        </label>
+
+        <h1>Ishte e veshtire te orientoheshit?</h1>
+        <label class="container">Po
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Jo
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Pak
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+
+              
+
+
+              <h1>Ne cilen faqe duhet shtuar informacione</h1>
+              <select name="faqet">
+                    <option value="1"selected>Kryefaqja</option>
+                    <option value="rreth">Rreth Prishtines</option>
+                    <option value="hotels" >Akomodimi</option>
+                    <option value="todo">Cfare te bejme</option>
+                    <option value="events">Eventet</option>
+                  </select>
+
+
+
+              <h1>Ndonje sygjerim, kritike apo lavdate?</h1>
+              <p><textarea id="output" rows="7" cols="90"></textarea></p>
+
+              <input type="submit" onclick="flm()">
+
+
+        </div>
+<br>
+
+
+
+    </article> 
+   <footer>
+          <div id="footer_bottom">
+      <p> Copyright &copy;  2018 Grupi 23 - All rights reserved. </p>
+          </div>
+      
+      </footer> 
+    
+    </div>
+    </body>
+    </html>
