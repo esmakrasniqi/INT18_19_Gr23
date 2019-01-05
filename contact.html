@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="contact.appcache">
     <head>
 <title> Travel to Prishtina</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,16 +65,16 @@
                 <a href="http://plus.google.com" target="_blank"><img height="40px" width="40px" src="prishtina/google_plus.png" alt="google plus" /></a>
             </p>
         </address>
-        <form id="contact_form">
+        <form id="contact_form" autocomplete="on">
                 <label>Name:</label>
                 <input type="text" name="sender" placeholder="Enter name">
                 <label>E-Mail:</label>
-                <input type="text" name="sender_e-mail" placeholder="Enter e-mail">
+                <input type="email" name="sender_e-mail" placeholder="Enter e-mail">
                 <label>Subject:</label>
                 <input type="text" name="subject" placeholder="Enter subject">
                 <label>Message:</label>
                 <textarea placeholder="Write your message here"></textarea>
-            <input id="submit" type="submit" value="Submit"> 
+            <input id="submit" type="submit" value="Submit"  onclick="flm()"> 
         </form>
 
 

@@ -38,3 +38,7 @@ function myFunction() {
   var txt = str.replace("Kosoven","Prishtinen");
   document.getElementById("demo").innerHTML = txt;
 }
+
+function flm() {
+  alert("Faleminderit qe na kontaktuat!");
+}

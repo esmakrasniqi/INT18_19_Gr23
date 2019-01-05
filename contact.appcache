@@ -1,0 +1,28 @@
+CACHE MANIFEST
+# te dhenat qe mundsohen offline pasi dowloadohen per her te pare
+/titulli.css
+/contact.css
+/contact.js
+/1.png
+/top.png
+/esma.jpg
+/bardhi.jpg
+/elsaa.jpg
+/pytesor.html
+/rrethnesh.html
+
+
+#permes yll zgjedhim te gjitha te dhenat tjera me perjashtim te chache te jene online
+NETWORK:
+*
+
+#The FALLBACK section below specifies that "Contact.html" 
+#will be served in place of all files in the /html/ catalog
+# in case an internet connection cannot be established:
+FALLBACK:
+1.html 
+rreth.html
+hotels.html
+events.html
+todo.html
+contact.html
